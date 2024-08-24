@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: none;
+    position: relative;
+    color: black;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(fondo3.jpg) no-repeat center center/cover;
+    z-index: -1;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: black;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: #007BFF;
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #d9534f;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #0056b3;
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-form {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.comment-form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #0056b3;
+}
+
+#contacto {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacto ul li {
+    margin-bottom: 10px;
+}
+
+#suscripcion-registro {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#subscriptionForm input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#subscriptionForm button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#subscriptionForm button:hover {
+    background: #0056b3;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
+
+.shopping-cart {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-total {
+    font-size: 1.5em;
+    color: #d9534f;
+}
+
+.checkout-button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background: #0056b3;
+}
+
+.checkout-message {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+}
+
+#scrollToTopBtn:hover {
+    background: #0056b3;
+}
